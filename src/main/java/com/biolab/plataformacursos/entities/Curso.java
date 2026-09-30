@@ -21,7 +21,7 @@ public class Curso {
     @NotBlank
     private String cargaHoraria;
 
-    @ManyToMany(mappedBy = "curso")
+    @ManyToMany(mappedBy = "cursos")
     private Set<Aluno> aluno = new HashSet<>();
 
 }
